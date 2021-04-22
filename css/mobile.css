@@ -1,0 +1,158 @@
+@media all and (max-width: 800px){
+    #myBtn{
+        width: 50px;
+
+    }
+    .img1{
+        float: none;
+        display: block;
+    }
+    
+    .img2{
+        float: none;
+        display: none;
+    }
+    
+    .playbill p{
+        bottom: 95px;
+    }
+    #hamster_head{
+        height: 100px;
+    }
+    .playbill img{
+        margin: 0 auto;
+        height: 140px;
+        width: 90%;
+    }
+    #article2 img{
+        height: 181px;
+    }
+    .more{
+        margin-top: 20px;
+        height: 26px;
+        margin-left: 35%;
+        padding-top:5px;
+        border-radius: 6px;
+    }
+
+    .more a{
+        
+        margin: 20px 0;
+        font-size: small;
+    }
+
+    .headers{
+        height: 80px;
+    }
+    .headers ul{
+        width: 80%;
+        display: table;
+        table-layout: fixed;
+    }
+    .headers ul li{
+        display: table-cell;
+    }
+    
+    .headers ul li a{
+        font-weight: 550;
+        font-size: 15px;
+    }
+    
+    .imgBox{
+        height: 250px;
+    }
+
+    .imgBox img{
+        height: 260px;
+    }
+
+    .imgBox .cartoon{
+        width: 20%;
+    }
+
+    .imgBox p{
+        font-size: x-small;
+        bottom: 80px;
+    }
+
+    
+    .article_list h5{
+        margin: 15px 0;
+    }
+
+    .article_list h6{
+        margin: 8px 0;
+    }
+
+    .article_list h1{
+        margin: 10px 0;
+    }
+    
+    .article_list h2{
+        margin: 10px 0;
+    }
+    
+    .article_list > div{
+        margin: 50px 0;
+        text-align: center;
+    }
+    .article_list div img{
+        /* height: 200px; */
+        width: 90%;
+        margin: 5px 0;
+    }
+    .article_list p{
+        text-align: center;
+        margin: 10px auto;
+        width: 90%;
+        font-size: 5px;
+    }
+    
+    
+    #cartoon_text p{
+        font-size: 10px;
+    }
+    
+    
+    .cartoon_box{
+        margin: 40px 0;
+        width: 100%;
+        text-align: center;
+    }
+    .cartoon_box div{
+        width: 50px;
+        display: inline-block;
+    }
+    .cartoon_box img{
+        height: 50px;
+    }
+    #cartoon_main{
+        height: 100px;
+    }
+
+    #hamster{
+        background-image: url(../images/home-hamster.jpg);
+        background-position: -50px -350px;
+        background-size: 423px auto;
+        height: 181px; width: 323px;
+        margin: 0 auto;
+    }
+    #bigimg_hamster{
+        background-image: url(../images/hamster-MI1.jpg);
+        background-position: -50px -150px;
+        background-size: 423px auto;
+        height: 181px; width: 90%;
+        margin: 0 auto;
+    }
+    #bottom{
+        height: 80px;
+        width: 100%;
+        margin: 0px;
+        padding: 0;
+    }
+    #bottom h5{
+        font-size: 1600;
+        margin: 0px; 
+        padding-top: 20px;
+    }
+}

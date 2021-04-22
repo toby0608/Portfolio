@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css">
+    <link rel="stylesheet" type="text/css" href="css/tablet_pc.css">
+    <link rel="stylesheet" type="text/css" href="css/pc.css">
     <style type="text/css">
         .img4{  
             display: none;
@@ -64,7 +67,7 @@
     </div>
     <div id="box_header">
         <h2>More Images of Us</h2></div>
-    <div class="imgBox">
+    <div class="imgBox" id="dog_imgBox">
         <img class="img-slide img1" src="images/dog-slider1.jpg" alt="1">
         <img class="img-slide img2" src="images/dog-slider2.jpg" alt="2">
         <img class="img-slide img3" src="images/dog-slider3.jpg" alt="3">
@@ -83,23 +86,59 @@
         <h5 style="font-size: 1600;">This is the site all about pets</h6>
         <p style="margin: 0px; font-size: xx-small;">@ All Rights Reserved by Little Home</p>
     </div>
+    <button onclick="topFunction()" id="myBtn" title="top">Skip to Content</button>
+    <script type="text/javascript" src="./js/public.js"></script>
     <script>
+        var status = false
+        var start_width = document.body.scrollWidth - 3;
+        window.onresize = function (){
+            now_width = document.body.scrollWidth - 3;
+            if (now_width > 1080 && start_width < 1080){
+                location.reload();
+                start_width = now_width;
+            }else if(start_width > 1080 && now_width < 1080){
+                location.reload();
+                start_width = now_width;
+            }
+        }
         var index=0;
             function ChangeImg(indexL) {
                 index++;
-                console.log(indexL)
+                console.log(indexL);
                 var a=document.getElementsByClassName("img-slide");
                 var b=document.getElementsByClassName("active");
-                for(var i=0;i<a.length;i++){
-                    if(indexL != i+1){
-                        a[i].style.display='none';
-                        b[i].style.backgroundColor ='#808080';
-                    }else{
-                        a[i].style.display='block';
-                        b[i].style.backgroundColor ='#ff5000';
+                now_width = document.body.scrollWidth - 3;
+                if (now_width > 1080){
+                    for(var i=0;i<a.length;i++){
+                        if (indexL == i+1 || indexL == i){
+                            a[i].style.display='block';
+                            b[i].style.backgroundColor ='#ff5000';
+                        }else{
+                            a[i].style.display='none';
+                            b[i].style.backgroundColor ='#808080';
+                        }
+                        if (indexL == 1){
+                            b[0].style.backgroundColor = '#ff5000';
+                            b[1].style.backgroundColor = '#808080';
+                        }else{
+                            b[0].style.backgroundColor = '#808080';
+                            b[1].style.backgroundColor = '#ff5000';
+                        }
+                    }
+                }else{
+                    for(var i=0;i<a.length;i++){
+                        if(indexL != i+1){
+                            a[i].style.display='none';
+                            b[i].style.backgroundColor ='#808080';
+                        }else{
+                            a[i].style.display='block';
+                            b[i].style.backgroundColor ='#ff5000';
+                        }
                     }
                 }
+                
             }
+        
     </script>
 </main>
 </body>

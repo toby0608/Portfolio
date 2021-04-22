@@ -1,0 +1,207 @@
+@media all and (min-width: 800px) and (max-width:1080px){
+    #myBtn{
+        width: 70px;
+
+    }
+    .headers{
+        height: 90px;
+    }    
+    .headers ul{
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 90px;
+        padding: auto;
+    }
+    .headers ul li a{
+        font-weight: 550;
+        font-size: 25px;
+    }
+    .main_img{
+        height: 450px;
+    }
+    .imgBox img{
+        height: 600px;
+    }
+
+    .imgBox .cartoon{
+        width: 15%;
+    }
+    .imgBox p{
+        font-size: 180%;
+        bottom: 120px;
+    }
+
+    .article_list{
+        margin-top: 80px;
+    }
+
+    .article_list h1{
+        font-size: 180%;
+    }
+
+    #article0{
+        margin: 0 10%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 30px 280px 50px 90px;
+        grid-row-gap: 20px;
+        grid-column-gap: 15px;
+    }
+    #article0 img{
+        height: 280px;
+    }
+    #article0 h1{
+        margin: auto;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #img_2{
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+
+    #article0 h6:nth-child(6){
+        grid-column-start: 2;
+        grid-row-start: 3;
+    }
+    .article_list h6{
+        font-size: 140%;
+        grid-row-gap: 10px;
+        margin-top: 100%;
+        margin: auto;
+    }
+    .article_list p{
+        font-size: 110%;
+    }
+    .more{
+        width: 191px;
+        margin: auto;
+        padding-top: 15px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        height: 35px;
+        border-radius: 32px;
+    }
+    .more a{
+        font-size: 120%;
+    }
+
+    .index_article{
+        width: 80%;
+        margin: 80px auto;
+    }
+    .index_article *:not(.more){
+        margin: 20px 0 ;
+        /* margin: 30px 0; */
+    }
+    .index_article .more{
+        margin-top: 40px;
+    }
+    #hamster{
+        background-image: url(../images/home-hamster.jpg);
+        background-position: -150px -980px;
+        height: 281px; width: 100%;
+    }
+
+    #cartoon_text h1{
+        font-size: 220%;
+    }
+    #cartoon_text p{
+        margin-top: 30px;
+        font-size: 120%;
+    }
+
+    .cartoon_box{
+        width: 80%;
+        margin: 0 auto;
+        /* padding: auto; */
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+        grid-template-rows: 300px;
+    }
+    .cartoon_box div{
+        width: 100%;
+    }
+    .cartoon_box *{
+        margin: auto;
+    }
+    .cartoon_box img{
+        height: 80px;
+    }
+
+    #cartoon_main{
+        height: 200px;
+    }
+    #node_article{
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+    #node_article>div{
+        width: 90%;
+        margin: 30px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 80px 255px 255px 80px;
+        grid-gap: 10px;
+    }
+    #node_article img{
+        height: 255px;
+    }
+    #node_article>div>h2{
+        margin: auto 0;
+        font-size: 180%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    #node_article>div>img:nth-child(4){
+        
+        width: 50%;
+        margin: 0 auto;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    #node_article>div>p{
+        margin-top: 10px;
+        margin: auto;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        font-size: 110%;
+    }
+
+    #box_header h2{
+        width: 260px;
+        font-size: 160%;
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+    #hamster_head{
+        height: 180px;
+    }
+    .playbill img{
+        height: 300px;
+        width: 90%;
+    }
+    .playbill p{
+        font-size: 180%;
+        bottom: 155px;
+    }
+    #bigimg_hamster{
+        background-image: url(../images/hamster-MI1.jpg);
+        background-position: -50px -150px;
+        background-size: 423px auto;
+        height: 255px; width: 100%;
+        margin: 0 auto;
+    }
+    #bottom{
+        height: 100px;
+        width: 100%;
+        margin: 0px;
+    }
+    #bottom *{
+        margin: 10px 0;
+    }
+    #bottom h5{
+        font-size: 120%;
+        padding-top: 30px;
+    }
+}
